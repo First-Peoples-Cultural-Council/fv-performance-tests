@@ -24,5 +24,5 @@ class StaticResourceTest extends Simulation {
 		.exec(http("request_0")
 			.get("/assets/images/logo-fpcc-white.png"))
 
-	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
+	setUp(scn.inject(atOnceUsers(10))).protocols(httpProtocol)
 }
