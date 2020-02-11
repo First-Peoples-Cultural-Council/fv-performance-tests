@@ -1,0 +1,10 @@
+{
+  "simulation": "StaticResourceTest",
+  "simulationId": "staticresourcetest",
+  "start": 1581448832508,
+  "description": "",
+  "scenarios": ["StaticResourceTest"],
+  "assertions": [
+
+  ]
+}
