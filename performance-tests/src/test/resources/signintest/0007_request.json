@@ -1,0 +1,1 @@
+{"params":{"language":"NXQL","sortBy":"dc:title","sortOrder":"ASC","query":"SELECT * FROM FVPage WHERE ecm:path STARTSWITH '/FV/sections/Site/Resources/' AND ecm:isVersion = 0 AND ecm:isTrashed = 0  AND fvpage:url LIKE '/home/'"},"context":{}}
