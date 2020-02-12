@@ -86,7 +86,9 @@ class AlphabetTest extends Simulation {
 		.exec(http("request_1")
 			.post("/nuxeo/api/v1/automation/User.Get")
 			.headers(headers_1)
-			.body(RawFileBody("/alphabettest/0001_request.json"))
+			//.body(StringBody("""{"params":{},"context":{}}"""))//.asJson
+			//{"params":{},"context":{}}
+			.body(RawFileBody("alphabettest/0001_request.json"))
 			.resources(http("request_2")
 			.get("/favicon-16x16.png")
 			.headers(headers_2),
@@ -117,7 +119,7 @@ class AlphabetTest extends Simulation {
             http("request_11")
 			.post("/nuxeo/api/v1/automation/Document.EnrichedQuery")
 			.headers(headers_1)
-			.body(RawFileBody("/alphabettest/0011_request.json")),
+			.body(RawFileBody("alphabettest/0011_request.json")),
             http("request_12")
 			.get("/explore/FV/sections/Data/Athabascan/Dene/Dene/learn/assets/styles/assets/images/footer-background.png")
 			.headers(headers_2),
@@ -142,7 +144,7 @@ class AlphabetTest extends Simulation {
             http("request_19")
 			.post("/nuxeo/api/v1/automation/Document.EnrichedQuery")
 			.headers(headers_19)
-			.body(RawFileBody("/alphabettest/0019_request.json")),
+			.body(RawFileBody("alphabettest/0019_request.json")),
             http("request_20")
 			.get("/nuxeo/nxfile/default/4fd1bce8-1218-4815-be02-f7a8c5625e83/file:content/173Sounds20060606124520781a.mp3")
 			.headers(headers_20),
@@ -307,5 +309,5 @@ class AlphabetTest extends Simulation {
 			.headers(headers_20)))
 
 	//setUp(scn.inject(atOnceUsers(10))).protocols(httpProtocol)
-	setUp(scn.inject(rampUsers(100) during (10 seconds))).protocols(httpProtocol)
+	setUp(scn.inject(rampUsers(30) during (10 seconds))).protocols(httpProtocol)
 }

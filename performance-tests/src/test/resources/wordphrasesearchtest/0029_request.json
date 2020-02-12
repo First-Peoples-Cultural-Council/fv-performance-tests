@@ -1,0 +1,1 @@
+{"params":{"language":"NXQL","query":"SELECT * FROM FVPage WHERE ecm:path STARTSWITH '/FV/sections/Site/Resources' AND ecm:isVersion = 0 AND ecm:isTrashed = 0  AND fvpage:primary_navigation = 1"},"context":{}}
