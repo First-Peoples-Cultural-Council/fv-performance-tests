@@ -23,11 +23,13 @@ class DocEnrichQueryTest extends Simulation {
 		    "properties" -> "*")
 
 
-        val scn = scenario("WordQueryTest")
+        val scn = scenario("CharQueryTest")
 		    .exec(http("request_0")
 			.post("/nuxeo/api/v1/automation/Document.EnrichedQuery")
 			.headers(headers)
-			.body(RawFileBody("wordquerytest.json")))
+			.body(RawFileBody("charquerytest.json")))
 
-    setUp(scn.inject(atOnceUsers(10))).protocols(httpProtocol)
+    //setUp(scn.inject(atOnceUsers(20))).protocols(httpProtocol)
+    setUp(scn.inject(rampUsers(100) during (10 seconds))).protocols(httpProtocol)
+    //
 }
