@@ -23,7 +23,7 @@ class DocEnrichQueryTest extends Simulation {
 		    "properties" -> "*")
 
 
-        val scn = scenario("CharQueryTest")
+        val scn = scenario("DocEnrichQueryTest")
 		    .exec(http("request_0")
 			.post("/nuxeo/api/v1/automation/Document.EnrichedQuery")
 			.headers(headers)
