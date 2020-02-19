@@ -5,7 +5,7 @@ To use, run `./performanceTests.sh`.
 
 ## Tests
 
-All of the tests are run on preprod.firstvoices.com
+All of the tests are currently run on preprod.firstvoices.com
 
 ### AlphabetTest
 Loads the entire Dene Alphabet page (chosen for its public availabilty and large alphabet size of 70 characters).

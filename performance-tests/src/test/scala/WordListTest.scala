@@ -71,7 +71,7 @@ class WordListTest extends Simulation {
 		.exec(http("request_0")
 			.get("/explore/FV/sections/Data/Athabascan/Dene/Dene/learn/words")
 			.headers(headers_0))
-		.pause(2)
+		//.pause(2)
 		.exec(http("request_1")
 			.get("/apple-touch-icon.png")
 			.headers(headers_1)
