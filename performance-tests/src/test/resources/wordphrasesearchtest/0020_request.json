@@ -1,0 +1,1 @@
+{"params":{"language":"NXQL","sortBy":"fvcharacter:alphabet_order","sortOrder":"asc","pageSize":"100","currentPageIndex":"0","query":"SELECT * FROM FVCharacter WHERE ecm:path STARTSWITH '/FV/sections/Data/Athabascan/Dene/Dene/Alphabet' AND ecm:isVersion = 0 AND ecm:isTrashed = 0 "},"context":{}}

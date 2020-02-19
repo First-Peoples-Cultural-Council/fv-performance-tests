@@ -1,0 +1,1 @@
+{"params":{"language":"NXQL","query":"SELECT * FROM FVDialect WHERE ecm:path STARTSWITH '/FV/Workspaces' AND ecm:isVersion = 0 AND ecm:isTrashed = 0  AND (fvdialect:short_url = 'esperanto' OR ecm:name = 'esperanto') AND ecm:isTrashed = 0 AND ecm:isCheckedInVersion = 0"},"context":{}}

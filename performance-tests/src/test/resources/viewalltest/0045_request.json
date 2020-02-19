@@ -1,0 +1,1 @@
+{"params":{"language":"NXQL","sortBy":"fvbookentry:sort_map,dc:created","sortOrder":"asc,asc","pageSize":"1","currentPageIndex":"0","query":"SELECT * FROM FVBookEntry WHERE ecm:parentId = '83f0ddbe-ad58-4db7-bd04-46ed000c3fa0' AND ecm:isVersion = 0 AND ecm:isTrashed = 0 "},"context":{}}

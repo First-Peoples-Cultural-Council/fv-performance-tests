@@ -1,0 +1,1 @@
+{"params":{"language":"NXQL","sortBy":"dc:title","sortOrder":"asc","pageSize":"10","currentPageIndex":"0","query":"SELECT * FROM FVPhrase WHERE ecm:parentId = 'a9de8996-4577-419d-802d-fce139ed3f2d' AND ecm:isVersion = 0 AND ecm:isTrashed = 0 "},"context":{}}
